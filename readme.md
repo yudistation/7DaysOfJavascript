@@ -1,4 +1,4 @@
-# 7 Days of Code - Lógica de Programação com Javascript
+# 7 Days of Code - Lógica de Programação com JavaScript
 
 ## Dia 1
 

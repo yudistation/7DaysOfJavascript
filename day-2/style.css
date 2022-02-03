@@ -1,0 +1,43 @@
+body {
+  font-family: 'Courier Prime', Courier, monospace;
+  margin: 0px;
+  background: rgb(195, 149, 255);
+}
+
+header {
+  text-align: center;
+}
+
+div.container {
+  margin: auto;
+  padding: 15px;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3) ;
+  width: 400px;
+  height: 500px;
+  background: white;
+  color: rgb(66, 66, 66);
+}
+
+div.imgs {
+  text-align: center;
+}
+
+img#profileEl {
+  width: 256px;
+}
+
+img#progLangEl {
+  width: 64px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  div.container {
+    width: 90%;
+  }
+}

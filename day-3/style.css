@@ -1,0 +1,82 @@
+:root {
+  --first-btn-color: #f47f53;
+  --second-btn-color: #02387a;
+  --bg-color: #c395ff;
+}
+
+body {
+  font-family: 'Courier Prime', Courier, monospace;
+  margin: 0px;
+  background: var(--bg-color);
+}
+
+header {
+  text-align: center;
+}
+
+div#container {
+  margin: auto;
+  padding: 15px;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3) ;
+  width: 400px;
+  height: 500px;
+  background: white;
+  color: rgb(66, 66, 66);
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+button {
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button#backend-btn {
+  display: block;
+  margin: auto;
+  color: var(--first-btn-color);
+  border: 3px solid var(--first-btn-color);
+}
+
+button#backend-btn:hover {
+  color: white;
+  background: var(--first-btn-color);
+}
+
+button#frontend-btn {
+
+  display: block;
+  margin: 10px auto;
+  color: var(--second-btn-color);
+  border: 3px solid var(--second-btn-color);
+}
+
+button#frontend-btn:hover {
+  color: white;
+  background: var(--second-btn-color);
+}
+
+img#book {
+  width: 270px;
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  div#container {
+    width: 90%;
+  }
+}

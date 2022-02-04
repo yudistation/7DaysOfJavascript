@@ -6,8 +6,7 @@ let r = document.querySelector(':root')
 let area = ''
 
 function analyzeAnswer(chosenOption) {
-  if(chosenOption == 'backend') {
-    console.log('Backend')
+  if(chosenOption == 'Back-end') {
     changeColors('#f47f53', '#813084', '#ec2025')
 
     firstBtn.innerHTML = 'C#'
@@ -16,7 +15,6 @@ function analyzeAnswer(chosenOption) {
     secondBtn.setAttribute('onclick',`tech('java')`)
     area = chosenOption
   } else {
-    console.log('Frontend')
     changeColors('#02387a', '#61dbfb', '#41b883')
     
     firstBtn.innerHTML = 'React'
@@ -50,8 +48,8 @@ function tech(chosenOption) {
   title.innerHTML = 'O que deseja fazer?'
   firstBtn.innerHTML = `Especializar em ${area}`
   firstBtn.setAttribute('onclick',`final('${area}')`)
-  secondBtn.setAttribute('onclick',`final('fullstack')`)
-  secondBtn.innerHTML = `Estudar para fullstack`
+  secondBtn.setAttribute('onclick',`final('Full Stack')`)
+  secondBtn.innerHTML = `Estudar para Full Stack`
 }
 
 function final(chosenOption) {
@@ -65,7 +63,7 @@ function final(chosenOption) {
 }
 
 function finalChoice(lastChoice) {
-  title.innerHTML = `Continue se dedicando aos estudos para se tornar um ótimo desenvolvedor ${lastChoice}!`
+  title.innerHTML = `Continue se dedicando aos estudos para se tornar um ótimo desenvolvedor <span>${lastChoice}</span>!`
   firstBtn.remove()
   secondBtn.remove()
   let book = document.createElement('img')

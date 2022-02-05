@@ -1,0 +1,54 @@
+body {
+  font-family: 'Courier Prime', Courier, monospace;
+  margin: 0px;
+  background: linear-gradient(to bottom, rgb(19, 116, 180), rgb(50 67 194)) no-repeat fixed;
+}
+
+header {
+  text-align: center;
+}
+
+div#container {
+  margin: auto;
+  padding: 15px;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3) ;
+  width: 400px;
+  background: white;
+  color: rgb(66, 66, 66);
+  text-align: center;
+}
+
+
+button#play {
+  display: block;
+  margin: auto;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-weight: 600;
+  color: rgb(19, 116, 180);
+  border: rgb(19, 116, 180) solid 3px;
+  border-radius: 30px;
+  padding: 5px 30px;
+  transition: .3s;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button#play:hover {
+  color: white;  
+  background: rgb(19, 116, 180);
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  div#container {
+    width: 85%;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+}

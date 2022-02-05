@@ -1,7 +1,12 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
 body {
   font-family: 'Courier Prime', Courier, monospace;
   margin: 0px;
-  background: linear-gradient(to bottom, rgb(19, 116, 180), rgb(50 67 194)) no-repeat fixed;
+  background: linear-gradient(to bottom, #1374b4, #3243c2) no-repeat fixed;
 }
 
 header {
@@ -18,8 +23,26 @@ div#container {
   background: white;
   color: rgb(66, 66, 66);
   text-align: center;
+  animation: entry .5s ease-out .2s both;
 }
 
+h1 {
+  animation: entry .5s ease-out;
+}
+
+h2 {
+  animation: entry .5s ease-out .4s both;
+}
+
+p {
+  text-align: left;
+  animation: entry .5s ease-out .6s both;
+}
+
+p#copyright {
+  text-align: center;
+  animation: entry .5s ease-out 1s both;
+}
 
 button#play {
   display: block;
@@ -30,18 +53,15 @@ button#play {
   border: rgb(19, 116, 180) solid 3px;
   border-radius: 30px;
   padding: 5px 30px;
-  transition: .3s;
+  transition: background .3s ease-out;
   cursor: pointer;
   font-size: 18px;
+  animation: entry .5s ease-out .8s both;
 }
 
 button#play:hover {
   color: white;  
   background: rgb(19, 116, 180);
-}
-
-footer {
-  text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
@@ -50,5 +70,16 @@ footer {
   }
   h1 {
     font-size: 8vw;
+  }
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

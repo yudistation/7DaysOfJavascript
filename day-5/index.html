@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Day 5</title>
+</head>
+
+<body>
+    <header>
+        <h1>Day 5 - 7DaysOfJavaScript</h1>
+    </header>
+    <section>
+        <div id="container">
+            <h1>Groceries list</h1>
+            <p>The best way to annotate your groceries lists to go to the grocery store.</p>
+            <div id="input-items">
+                <input type="text" name="productName" id="productName">
+                <input type="number" name="productQuantity" id="productQuantity" value="1">
+                <select name="type" id="productDepartment">
+                    <option value="default" selected>Departments</option>
+                    <option value="candy">Candy</option>
+                    <option value="frozen" onclick="focus()">Frozen</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="drink">Drink</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="vegetable">Vegetable</option>
+                </select>
+                <button class="btn" onclick="addProduct()">+</button>
+            </div>
+            <ul id="res">
+
+            </ul>
+            <button class="btn-done" onclick="organize()">Done</button>
+        </div>
+    </section>
+    <footer>
+        <p id="copyright">&copy; YudiStation</p>
+    </footer>
+    <script src="day-6.js"></script>
+</body>
+
+</html>

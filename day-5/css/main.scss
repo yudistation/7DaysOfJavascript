@@ -1,0 +1,84 @@
+$primary-color: #2181ff;
+$secondary-color: #21D4FD;
+$confirm-color: #2ea538;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #21D4FD, #2181ff) fixed;
+    font-family: 'Poppins', sans-serif, serif;
+    h1 {
+        margin: 20px;
+        text-align: center;
+    }
+    section {
+        div#container {
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 10px 10px 10px #53535367;
+            min-height: 70vh;
+            width: 500px;
+            margin: auto;
+            padding: 10px 25px;
+            div#input-items {
+                display: flex;
+            }
+            h1 {
+                margin-top: 20px;
+                text-align: center;
+            }
+            .btn {
+                margin: auto;
+                color: $confirm-color;
+                border: 3px solid $confirm-color;
+                background: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                // padding: 6px 25px;
+                text-align: center;
+                transition: background 0.3s;
+                border-radius: 25px;
+                cursor: pointer;
+                width: 10%;
+                padding: 10px;
+            }
+            .btn:hover {
+                background: $confirm-color;
+                color: #fff;
+                text-decoration: none;
+            }
+            input {
+                width: 46%;
+                padding: 10px;
+                border-radius: 100px;
+                margin: 10px 10px 10px 0px;
+            }
+            input#productQuantity {
+                width: 14%;
+                margin: 10px;
+            }
+            select {
+                width: 30%;
+                padding: 5px;
+                border-radius: 100px;
+                margin: 10px;
+            }
+            ul#res {
+                margin-left: 20px;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}

@@ -22,8 +22,7 @@ function addItems() {
         for (const product of products) { // verifica se o produto já existe na lista
             if (item.value == product.name) {
                 isEqual = true
-                productEqual(product)
-                console.log(products)
+                productEqual(product)                
                 li.innerHTML = `${item.value} | ${department.value} | ${itemQtde.value} uni`
                 item.value = ''
                 item.focus()
@@ -32,13 +31,11 @@ function addItems() {
 
         function productEqual(productEqual) {
             productEqual.quantity = Number(productEqual.quantity) + Number(itemQtde.value)
-            console.log(productEqual)
             printProductsList()
         }
 
         if (isEqual != true) {
             products.push(new Product(item.value, department.value, itemQtde.value))
-            console.log(products)
             li.innerHTML = `${item.value} | ${department.value} | ${itemQtde.value} uni`
             res.appendChild(li)
             item.value = ''
@@ -49,7 +46,6 @@ function addItems() {
 
 function organize() {
     products.sort()
-    console.log(products)
 }
 
 function printProductsList() {
